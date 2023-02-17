@@ -17,5 +17,6 @@ jobs:
     - name: SUT
       run: java -jar ./artifacts/app-mbank.jar &
     - name: Build with Gradle
+      run: chmod +x gradlew
       run: gradlew test --info 
-     
+   
