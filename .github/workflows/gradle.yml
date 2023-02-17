@@ -17,4 +17,5 @@ jobs:
     - name: SUT
       run: java -jar ./artifacts/app-mbank.jar &
     - name: Build with Gradle
-      run: gradle -B -e verify
+      run: gradlew test --info 
+     
