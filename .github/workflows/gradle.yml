@@ -16,9 +16,9 @@ jobs:
         distribution: 'adopt'
     - name: SUT
       run: java -jar ./artifacts/app-mbank.jar &
-  
-    - name: Build with Gradle
-      run: ./gradlew test --info
-      
+       
     - name: Grant permission for gradlew
       run: chmod +x gradlew
+      
+    - name: Build with Gradle
+      run: ./gradlew test --info
